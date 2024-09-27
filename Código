@@ -1,9 +1,16 @@
 import random
+
 characters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
 extensión = int(input("¿Cuantos carácteres deseas utilizar para tu nueva contraseña?"))
 Password = ""
 
+list = []
+
 for i in range(extensión):
     Password += random.choice(characters)
 print(Password)
+
+
+list.append(Password)
+print("Se ha guardado tu contraseña:" , list)
